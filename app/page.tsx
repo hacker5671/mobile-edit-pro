@@ -1,14 +1,19 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="hero">
+
       <h1>Mobile Edit Pro</h1>
 
       <p>
-        Professional online video editor powered by Next.js,
-        Firebase and FFmpeg.
+        Professional online video editor.
       </p>
 
-      <button>Start Editing</button>
+      <Link href="/editor">
+        <button>Open Editor</button>
+      </Link>
+
     </main>
   );
 }
